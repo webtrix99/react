@@ -1,0 +1,15 @@
+ul {
+  display: flex;
+  list-style: n;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}

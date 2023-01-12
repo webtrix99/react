@@ -1,0 +1,77 @@
+.main {
+  padding: 20px 15px;
+  .main-inner {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 15px 0 25px;
+  input[type="search"] {
+    border: 1px solid #cccccc;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 9px;
+    min-width: 350px;
+  }
+  button {
+    border: none;
+    background: #ff2753;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+    cursor: pointer;
+  }
+}
+.resturants {
+  flex-wrap: wrap;
+  justify-content: start;
+  display: flex;
+  gap: 1rem;
+  .card {
+    max-width: calc((100% - 3rem) / 4);
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+    .card-header {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .card-content {
+      padding: 10px 0;
+      div:first-child {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      div:last-child {
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
+    }
+    .cart-footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.25rem 0;
+      font-size: 0.74rem;
+      font-weight: 700;
+    }
+    &:hover {
+      box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
